@@ -1,44 +1,109 @@
-# Dro1d Labs
+# dro1d labs
 
-On-device security, diagnostics, and reliability tooling for iOS & macOS.  
-Lightweight modules • Clear threat models • Production-safe design
+Privacy-first software for iOS & macOS.  
+Focused on on-device security, content protection, and user-controlled diagnostics.
 
----
-
-## 🔐 Areas of Work
-- System integrity & environment validation  
-- Secure storage foundations  
-- Local-only media analysis  
-- Operational safety & privacy-oriented UI flows  
+We build tools that are:
+- Offline by design
+- Transparent in behavior
+- Safe for production use
+- Free from tracking, ads, or data collection
 
 ---
 
-## 🧩 Modules
-### **IntegrityKit**
-Environment heuristics, filesystem checks, process consistency utilities.  
-*Status: Release prep*
+## What We Build
 
-### **VaultKit**
-AES-based storage layer with minimal attack surface.  
-*Status: Early scaffolding*
+### De-Ad
+Minimal Safari content blocker focused on privacy and reliability.  
+Blocks ads and trackers without inspecting browsing activity.
 
-### **Scan Engine**
-Local-only classifier for high-volume media traversal.  
-*Status: Prototype docs*
+- Uses Apple’s Content Blocker API only  
+- No page access, no telemetry  
+- Conservative rules to avoid site breakage  
+- Open rule transparency
 
 ---
 
-## 📚 Reference
-**osx-and-ios-security** — curated notes on iOS/macOS defensive techniques and diagnostic methods.
+### NuDefndr
+Local-only photo scanner and secure vault for sensitive media.
+
+- On-device analysis only  
+- No cloud services  
+- Strong encryption and isolation  
+- Designed for privacy-critical workflows
 
 ---
 
-## 🧭 Principles
-- On-device by default  
-- Transparent implementation  
-- Production reliability  
+### Defndr
+System integrity and environment validation utilities.
+
+- Runtime environment checks  
+- Filesystem and process heuristics  
+- Defensive diagnostics for iOS & macOS  
+- Built to be safe, explainable, and non-invasive
 
 ---
 
-## 📨 Contact
-Open an issue in the relevant repository.
+## Core Components
+
+### IntegrityKit
+Reusable environment and integrity checks shared across products.  
+Focused on detection without exploitation.
+
+**Status:** Stable / in production use
+
+---
+
+### VaultKit
+Minimal encryption and secure storage primitives.
+
+- AES-based storage
+- Small attack surface
+- No unnecessary abstractions
+
+**Status:** Active development
+
+---
+
+### Scan Engine
+Local-only media traversal and classification engine.
+
+- Designed for high-volume libraries  
+- No network access  
+- Deterministic, explainable behavior
+
+**Status:** Prototype / internal use
+
+---
+
+## Principles
+
+- **On-device by default**  
+  No cloud dependencies. No remote processing.
+
+- **User control over automation**  
+  No hidden logic. No silent decisions.
+
+- **Transparency over “smart” behavior**  
+  Features must be explainable and auditable.
+
+- **Privacy as architecture, not policy**  
+  If data cannot be accessed, it cannot be abused.
+
+---
+
+## Open Source
+
+Where possible, we publish:
+- Blocking rules
+- Supporting tools
+- Documentation and validation logic
+
+Open source is used for transparency and trust, not data collection.
+
+---
+
+## Contact & Support
+
+Issues and discussions are handled per repository.  
+No tracking, no support tickets, no marketing funnels.
